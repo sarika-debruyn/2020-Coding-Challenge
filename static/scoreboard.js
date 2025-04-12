@@ -1,5 +1,3 @@
-console.log("🏁 scoreboard.js is running");
-
 function display_scoreboard(scoreboard){
   $("#teams").empty();
   $.each(scoreboard, function(index, team){
@@ -46,6 +44,5 @@ function increase_score(id){
 }
 
 $(document).ready(function(){
-  console.log("Page is ready. Rendering initial scoreboard.");
   display_scoreboard(scoreboard);
 })
